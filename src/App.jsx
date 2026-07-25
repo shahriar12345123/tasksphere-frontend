@@ -20,7 +20,7 @@ import Register from './pages/Register';
 // External redirect component for /apple route
 const AppleAdminRedirect = () => {
   React.useEffect(() => {
-    window.location.href = 'http://localhost:5001';
+    window.location.href = 'https://tasksphere-backend-m0e7.onrender.com';
   }, []);
   return (
     <div className="min-h-screen bg-[#0a0314] flex flex-col items-center justify-center text-white font-sans p-4">
@@ -28,7 +28,7 @@ const AppleAdminRedirect = () => {
         <div className="w-full h-full bg-[#0a0314] rounded-[14px]" />
       </div>
       <h2 className="text-lg font-bold">Redirecting to Apple Admin Panel...</h2>
-      <p className="text-xs text-purple-300/70 mt-1">Connecting to http://localhost:5001</p>
+      <p className="text-xs text-purple-300/70 mt-1">Connecting to https://tasksphere-backend-m0e7.onrender.com</p>
     </div>
   );
 };

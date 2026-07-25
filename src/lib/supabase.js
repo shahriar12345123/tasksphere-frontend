@@ -10,4 +10,4 @@ export const supabase = createClient(
   supabaseAnonKey || DEFAULT_ANON_KEY
 );
 
-export const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5001';
+export const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'https://tasksphere-backend-m0e7.onrender.com';
