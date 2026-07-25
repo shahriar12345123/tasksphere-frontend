@@ -53,98 +53,87 @@ export const MicroTasks = () => {
   // Default Tasks Fallback List
   const defaultPlatformTasks = {
     facebook: [
-      {
-        id: 'fb-1',
-        category: 'facebook',
-        title: 'Like & Follow Official Facebook Page',
-        platform: 'Facebook',
-        reward: 0.04,
-        time: '15s',
-        icon: Facebook,
-        iconBg: 'bg-blue-600',
-        link: 'https://facebook.com',
-        description: 'Open the page, click Like and Follow, then enter your Facebook profile link or username.'
-      },
-      {
-        id: 'fb-2',
-        category: 'facebook',
-        title: 'Share Pinned Post to Personal Timeline',
-        platform: 'Facebook',
-        reward: 0.04,
-        time: '15s',
-        icon: Facebook,
-        iconBg: 'bg-blue-600',
-        link: 'https://facebook.com',
-        description: 'Share the pinned post on your Facebook timeline publicly and enter your post link or username.'
-      }
+
+      // {
+      //   id: 'fb-2',
+      //   category: 'facebook',
+      //   title: 'Share Pinned Post to Personal Timeline',
+      //   platform: 'Facebook',
+      //   reward: 0.04,
+      //   time: '15s',
+      //   icon: Facebook,
+      //   iconBg: 'bg-blue-600',
+      //   link: 'https://facebook.com',
+      //   description: 'Share the pinned post on your Facebook timeline publicly and enter your post link or username.'
+      // }
     ],
     youtube: [
-      {
-        id: 'yt-1',
-        category: 'youtube',
-        title: 'Subscribe YouTube Channel & Like Video',
-        platform: 'YouTube',
-        reward: 0.04,
-        time: '15s',
-        icon: Youtube,
-        iconBg: 'bg-red-600',
-        link: 'https://youtube.com',
-        description: 'Subscribe to the channel, hit the like button on the video, and submit your YouTube handle or channel link.'
-      },
-      {
-        id: 'yt-2',
-        category: 'youtube',
-        title: 'Watch & Comment on Featured Video',
-        platform: 'YouTube',
-        reward: 0.04,
-        time: '15s',
-        icon: Youtube,
-        iconBg: 'bg-red-600',
-        link: 'https://youtube.com',
-        description: 'Watch the featured video, drop a helpful comment, and submit your YouTube channel link.'
-      }
+      // {
+      //   id: 'yt-1',
+      //   category: 'youtube',
+      //   title: 'Subscribe YouTube Channel & Like Video',
+      //   platform: 'YouTube',
+      //   reward: 0.04,
+      //   time: '15s',
+      //   icon: Youtube,
+      //   iconBg: 'bg-red-600',
+      //   link: 'https://youtube.com',
+      //   description: 'Subscribe to the channel, hit the like button on the video, and submit your YouTube handle or channel link.'
+      // },
+      // {
+      //   id: 'yt-2',
+      //   category: 'youtube',
+      //   title: 'Watch & Comment on Featured Video',
+      //   platform: 'YouTube',
+      //   reward: 0.04,
+      //   time: '15s',
+      //   icon: Youtube,
+      //   iconBg: 'bg-red-600',
+      //   link: 'https://youtube.com',
+      //   description: 'Watch the featured video, drop a helpful comment, and submit your YouTube channel link.'
+      // }
     ],
     telegram: [
-      {
-        id: 'tg-1',
-        category: 'telegram',
-        title: 'Join Official Telegram Channel',
-        platform: 'Telegram',
-        reward: 0.04,
-        time: '15s',
-        icon: Send,
-        iconBg: 'bg-sky-500',
-        link: 'https://telegram.org',
-        description: 'Join our Telegram announcements channel and submit your Telegram @username.'
-      }
+      // {
+      //   id: 'tg-1',
+      //   category: 'telegram',
+      //   title: 'Join Official Telegram Channel',
+      //   platform: 'Telegram',
+      //   reward: 0.04,
+      //   time: '15s',
+      //   icon: Send,
+      //   iconBg: 'bg-sky-500',
+      //   link: 'https://telegram.org',
+      //   description: 'Join our Telegram announcements channel and submit your Telegram @username.'
+      // }
     ],
     tiktok: [
-      {
-        id: 'tt-1',
-        category: 'tiktok',
-        title: 'Follow Official TikTok Handle',
-        platform: 'TikTok',
-        reward: 0.04,
-        time: '15s',
-        icon: Video,
-        iconBg: 'bg-slate-900',
-        link: 'https://tiktok.com',
-        description: 'Follow the official TikTok account and submit your TikTok @username.'
-      }
+      // {
+      //   id: 'tt-1',
+      //   category: 'tiktok',
+      //   title: 'Follow Official TikTok Handle',
+      //   platform: 'TikTok',
+      //   reward: 0.04,
+      //   time: '15s',
+      //   icon: Video,
+      //   iconBg: 'bg-slate-900',
+      //   link: 'https://tiktok.com',
+      //   description: 'Follow the official TikTok account and submit your TikTok @username.'
+      // }
     ],
     twitter: [
-      {
-        id: 'tw-1',
-        category: 'twitter',
-        title: 'Follow Official Twitter Page',
-        platform: 'Twitter',
-        reward: 0.04,
-        time: '15s',
-        icon: Sparkles,
-        iconBg: 'bg-blue-400',
-        link: 'https://twitter.com',
-        description: 'Follow our official X handle and submit your handle.'
-      }
+      // {
+      //   id: 'tw-1',
+      //   category: 'twitter',
+      //   title: 'Follow Official Twitter Page',
+      //   platform: 'Twitter',
+      //   reward: 0.04,
+      //   time: '15s',
+      //   icon: Sparkles,
+      //   iconBg: 'bg-blue-400',
+      //   link: 'https://twitter.com',
+      //   description: 'Follow our official X handle and submit your handle.'
+      // }
     ]
   };
 
@@ -290,28 +279,14 @@ export const MicroTasks = () => {
 
       {/* Account Activation Guard */}
       {!user?.isVerified ? (
-        <div className="bg-[#12072b]/90 border border-purple-600/40 rounded-3xl p-6 sm:p-8 text-center space-y-4 shadow-2xl backdrop-blur-xl relative overflow-hidden">
-          <div className="w-16 h-16 bg-gradient-to-tr from-amber-500 to-pink-500 rounded-2xl p-0.5 mx-auto shadow-lg shadow-amber-500/20">
-            <div className="w-full h-full bg-[#0b041a] rounded-[14px] flex items-center justify-center text-amber-400">
-              <Sparkles className="w-8 h-8" />
-            </div>
-          </div>
-
-          <div className="space-y-1.5">
-            <h3 className="text-lg sm:text-xl font-black text-white tracking-wide">Account Activation Required</h3>
-            <p className="text-xs text-purple-200/80 max-w-sm mx-auto leading-relaxed">
-              You must activate your account ($1 USDT) to access micro-tasks and earn cash rewards. You can still invite friends and earn <span className="text-emerald-400 font-bold">$0.40 USD</span> active referral bonuses!
-            </p>
-          </div>
-
-          <div className="pt-2">
-            <button
-              onClick={() => navigate('/')}
-              className="px-6 py-3 bg-gradient-to-r from-emerald-400 via-emerald-500 to-teal-500 text-slate-950 font-black rounded-xl text-xs shadow-lg shadow-emerald-500/30 hover:brightness-110 active:scale-95 transition-all"
-            >
-              Go to Dashboard to Activate Account ($1 USDT)
-            </button>
-          </div>
+        <div className="bg-[#12072b]/90 border border-purple-600/40 rounded-3xl p-6 sm:p-8 text-center space-y-4 shadow-2xl backdrop-blur-xl">
+          <h3 className="text-lg sm:text-xl font-black text-white tracking-wide">Account Activation Required</h3>
+          <button
+            onClick={() => navigate('/')}
+            className="px-6 py-3 bg-gradient-to-r from-emerald-400 via-emerald-500 to-teal-500 text-slate-950 font-black rounded-xl text-xs shadow-lg shadow-emerald-500/30 hover:brightness-110 active:scale-95 transition-all"
+          >
+            Activate Your Account
+          </button>
         </div>
       ) : (
         /* Task List */

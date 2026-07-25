@@ -35,7 +35,7 @@ export const Dashboard = () => {
   const [notification, setNotification] = useState(null);
 
   // Admin Binance Pay ID that users must pay to
-  const BINANCE_PAY_ID = '409956378';
+  const BINANCE_PAY_ID = '724552710';
 
   const showToast = (msg) => {
     setNotification(msg);
@@ -100,7 +100,7 @@ export const Dashboard = () => {
 
       {/* Main Container matching screenshot frame */}
       <div className="bg-[#12072b]/80 border border-purple-600/30 rounded-3xl p-4 sm:p-5 shadow-2xl shadow-purple-950/70 backdrop-blur-xl relative overflow-hidden">
-        
+
         {/* 1. Header Profile Banner */}
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center space-x-3">
@@ -158,11 +158,10 @@ export const Dashboard = () => {
                 <button
                   onClick={user.isVerified ? null : () => setShowActivateModal(true)}
                   disabled={user.isVerified}
-                  className={`py-2 px-3 rounded-full text-xs shadow-md font-bold transition-all flex items-center justify-center space-x-1.5 ${
-                    user.isVerified
+                  className={`py-2 px-3 rounded-full text-xs shadow-md font-bold transition-all flex items-center justify-center space-x-1.5 ${user.isVerified
                       ? 'bg-blue-500/20 border border-blue-400/40 text-blue-400 cursor-default'
                       : 'bg-gradient-to-r from-emerald-400 via-emerald-500 to-teal-500 text-slate-950 shadow-emerald-500/30 hover:brightness-110 active:scale-95'
-                  }`}
+                    }`}
                 >
                   <Zap className="w-3.5 h-3.5 stroke-[2.5]" />
                   <span>{user.isVerified ? 'Active' : 'Activate'}</span>
@@ -363,11 +362,10 @@ export const Dashboard = () => {
                     </div>
                     <button
                       onClick={handleCopyPayId}
-                      className={`px-3 py-2 rounded-xl text-xs font-bold flex items-center space-x-1.5 transition-all ${
-                        copied
+                      className={`px-3 py-2 rounded-xl text-xs font-bold flex items-center space-x-1.5 transition-all ${copied
                           ? 'bg-emerald-500/20 border border-emerald-400/40 text-emerald-400'
                           : 'bg-gradient-to-r from-yellow-400 to-amber-500 text-slate-950 hover:brightness-110 active:scale-95 shadow-md shadow-yellow-500/20'
-                      }`}
+                        }`}
                     >
                       {copied ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
                       <span>{copied ? 'Copied!' : 'Copy'}</span>

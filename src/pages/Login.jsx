@@ -44,7 +44,7 @@ export const Login = () => {
 
         <div>
           <h2 className="text-xl sm:text-2xl font-black text-white tracking-wide">Welcome Back</h2>
-          <p className="text-xs text-purple-300/70 mt-1">Log in to your TaskSphere account</p>
+          <p className="text-xs text-purple-300/70 mt-1">Log in to your TASKVEROO account</p>
         </div>
 
         {errorMsg && (

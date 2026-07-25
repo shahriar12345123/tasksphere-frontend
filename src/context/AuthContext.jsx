@@ -149,7 +149,7 @@ export const AuthProvider = ({ children }) => {
         if (profile?.email) {
           targetEmail = profile.email;
         } else {
-          targetEmail = `${emailOrUsername}@tasksphere.pro`;
+          targetEmail = `${emailOrUsername}@taskveroo.pro`;
         }
       }
 

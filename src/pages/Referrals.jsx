@@ -8,7 +8,7 @@ export const Referrals = () => {
   const { user } = useAuth();
   const [copied, setCopied] = useState(false);
 
-  const referralLink = `https://tasksphere.pro/register?ref=${user.username}`;
+  const referralLink = `https://taskveroo.pro/register?ref=${user.username}`;
 
   const copyLink = () => {
     navigator.clipboard.writeText(referralLink);

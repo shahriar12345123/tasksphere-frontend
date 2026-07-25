@@ -7,7 +7,7 @@ export const Support = () => {
   const navigate = useNavigate();
   const { user } = useAuth();
   const [messages, setMessages] = useState([
-    { id: 1, sender: 'bot', text: 'Hello shahriar123! Welcome to TaskSphere Support. How can we assist you today?' }
+    { id: 1, sender: 'bot', text: `Hello ${user.username || 'User'}! Welcome to TASKVEROO Support. How can we assist you today?` }
   ]);
   const [inputMsg, setInputMsg] = useState('');
 

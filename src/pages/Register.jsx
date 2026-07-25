@@ -55,7 +55,7 @@ export const Register = () => {
 
         <div>
           <h2 className="text-xl sm:text-2xl font-black text-white tracking-wide">Create Account</h2>
-          <p className="text-xs text-purple-300/70 mt-1">Start earning money today with TaskSphere</p>
+          <p className="text-xs text-purple-300/70 mt-1">Start earning money today with TASKVEROO</p>
         </div>
 
         {errorMsg && (
